@@ -11,11 +11,11 @@ updates:
   - package-ecosystem: "pnpm"
     directory: "/"
     schedule:
-      cron: "* * * * *"
-      # interval: "daily"
+      interval: "daily"
+      time: "17:25"
+      timezone: "America/Sao_Paulo"
+      # cron: "* * * * *"
       # day: "monday"
-      # time: "16:30"
-      # timezone: "America/Sao_Paulo"
     lockfile-path: "pnpm-lock.yaml"
     open-pull-requests-limit: 5
     # labels:
