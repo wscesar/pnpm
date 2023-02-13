@@ -18,7 +18,3 @@ updates:
       # timezone: "America/Sao_Paulo"
     lockfile-path: "pnpm-lock.yaml"
     open-pull-requests-limit: 5
-    # labels:
-    #   - "dependencies"
-    # dependencies:
-    #   - dependency-file-glob: "pnpm-lock.yaml"
