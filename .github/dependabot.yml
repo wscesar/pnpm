@@ -1,0 +1,24 @@
+
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  # Maintain dependencies for npm
+  - package-ecosystem: "pnpm"
+    directory: "/"
+    schedule:
+      cron: "* * * * *"
+      # interval: "daily"
+      # day: "monday"
+      # time: "16:30"
+      # timezone: "America/Sao_Paulo"
+    lockfile-path: "pnpm-lock.yaml"
+    open-pull-requests-limit: 5
+    # labels:
+    #   - "dependencies"
+    # dependencies:
+    #   - dependency-file-glob: "pnpm-lock.yaml"
