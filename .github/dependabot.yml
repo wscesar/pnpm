@@ -5,14 +5,14 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      cron: "0 * * * *"
 
   # Maintain dependencies for npm
   - package-ecosystem: "pnpm"
     directory: "/"
     schedule:
       interval: "daily"
-      time: "17:25"
+      time: "18:00"
       timezone: "America/Sao_Paulo"
       # cron: "* * * * *"
       # day: "monday"
